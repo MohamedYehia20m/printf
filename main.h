@@ -29,7 +29,7 @@ typedef struct spec
 {
 	char *spec;
 	int (*func)(va_list); /* TODO: Parameters will be modified */
-}spec_t;
+} spec_t;
 
 
 /************************************************/
