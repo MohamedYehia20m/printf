@@ -47,5 +47,8 @@ int _printf(const char *format, ...);
 int (*get_spec(char *s))(va_list ap);
 int _printf_character(va_list ap);
 int _printf_string_lowercase(va_list ap);
+int _printf_integer(va_list ap);
+char *_itoa(int n);
+int intlen(int n);
 
 #endif
