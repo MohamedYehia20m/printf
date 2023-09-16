@@ -44,5 +44,6 @@ int _atoi(char *s);
 
 /**************** Task Functions ****************/
 int _printf(const char *format, ...);
+int (*get_spec(char *s))(va_list ap);
 
 #endif
