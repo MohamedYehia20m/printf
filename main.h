@@ -41,6 +41,7 @@ int _putchar(char c);
 void _puts(char *str);
 int _strlen(char *s);
 int _atoi(char *s);
+void rev_string(char *s);
 
 /**************** Task Functions ****************/
 int _printf(const char *format, ...);
@@ -50,5 +51,7 @@ int _printf_string_lowercase(va_list ap);
 int _printf_integer(va_list ap);
 char *_itoa(int n);
 int intlen(int n);
+int _printf_binary(va_list ap);
+char *convert_to_binary(int n);
 
 #endif
