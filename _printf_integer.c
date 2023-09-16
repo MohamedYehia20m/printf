@@ -2,7 +2,7 @@
 
 /**
  * _printf_integer - print integer on the terminal.
- * @ap: pointer to operation.
+ * @ap: argument pointer.
  *
  * Return: length of the integer printed.
  */

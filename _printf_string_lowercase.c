@@ -2,7 +2,7 @@
 
 /**
  * _printf_string_lowercase - print string on the terminal.
- * @ap: pointer to operation.
+ * @ap: argument pointer.
  *
  * Return: length of the string printed.
  */

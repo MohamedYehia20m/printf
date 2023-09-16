@@ -2,7 +2,7 @@
 
 /**
  * _printf_character - print character on the terminal.
- * @ap: pointer to operation.
+ * @ap: argument pointer.
  *
  * Return: 1 (the number of printed characters).
  */
