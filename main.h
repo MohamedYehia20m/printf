@@ -53,5 +53,6 @@ char *_itoa(int n);
 int intlen(int n);
 int _printf_binary(va_list ap);
 char *convert_to_binary(int n);
+int binLenOf(int n);
 
 #endif
