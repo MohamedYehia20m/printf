@@ -54,5 +54,7 @@ int intlen(int n);
 int _printf_binary(va_list ap);
 char *convert_to_binary(int n);
 int binLenOf(int n);
+int _printf_hexadecimal_lowercase(va_list ap);
+char *convert_to_hexadecimal_lowercase(int n);
 
 #endif
