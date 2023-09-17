@@ -57,5 +57,7 @@ int binLenOf(int n);
 int _printf_hexadecimal_lowercase(va_list ap);
 char *convert_to_hexadecimal_lowercase(int n);
 int hexLenOf(int n);
+int _printf_hexadecimal_uppercase(va_list ap);
+char *convert_to_hexadecimal_uppercase(int n);
 
 #endif
