@@ -42,6 +42,7 @@ void _puts(char *str);
 int _strlen(char *s);
 int _atoi(char *s);
 void rev_string(char *s);
+int 2sComplement(int c);
 
 /**************** Task Functions ****************/
 int _printf(const char *format, ...);
@@ -59,5 +60,10 @@ char *convert_to_hexadecimal_lowercase(int n);
 int hexLenOf(int n);
 int _printf_hexadecimal_uppercase(va_list ap);
 char *convert_to_hexadecimal_uppercase(int n);
+int _printf_decimal(int c);
+int _printf_unsigned_integer(unsigned int c);
+int 2sComplement(int c);
+int _printf_octal(int argument);
+int convert_to_octal(int argument);
 
 #endif
