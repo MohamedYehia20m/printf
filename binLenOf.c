@@ -1,3 +1,5 @@
+#include "main.c"
+
 /**
  * binLenOf - count length of the binary equivalent.
  * @n: integer to be calculated.
