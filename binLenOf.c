@@ -1,4 +1,4 @@
-#include "main.c"
+#include "main.h"
 
 /**
  * binLenOf - count length of the binary equivalent.
