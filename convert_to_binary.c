@@ -8,19 +8,19 @@
  */
 char *convert_to_binary(int n)
 {
-	int nlen = intlen(n), i = 0;
+	int len = binLenOf(n), ctr = 0;
 	char *str;
 
-	str = malloc(sizeof(char) * (nlen + 1));
+	str = malloc(sizeof(char) * (len + 1));
 	if (str == NULL)
 		return (NULL);
-	while (i <= nlen)
+	while (ctr <= len)
 	{
-		str[i] = n % 2;
+		str[ctr] = n % 2;
 		n /= 2;
-		i++;
+		ctr++;
 	}
-	str[i] = '\0';
+	str[ctr] = '\0';
 	rev_string(str);
 	return (str);
 }
