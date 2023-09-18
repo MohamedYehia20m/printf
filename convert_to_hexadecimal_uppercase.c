@@ -15,7 +15,7 @@ char *convert_to_hexadecimal_uppercase(int n)
 	str = malloc(sizeof(char) * (len + 1));
 	if (str == NULL)
 		return (NULL);
-	while (ctr <= len)
+	while (ctr < len)
 	{
 		tmp = n % 16;
 		if (tmp < 10)
