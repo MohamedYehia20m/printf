@@ -9,7 +9,7 @@
  * Return: single character '%'
  */
 
-int _printf_percentage(va_list ap)
+int _printf_percentage(va_list __attribute__((unused)) ap)
 {
 	_putchar('%');
 	return (1);
