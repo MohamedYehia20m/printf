@@ -10,8 +10,10 @@
  * Return: return number of digits to be printed using intlen()
  */
 
-int _printf_decimal(int argument)
+int _printf_decimal(va_list ap)
 {
+	int argument = va_arg(ap,int);
+
 	if (argument < 0)
 	{
 		_putchar('-');
