@@ -2,7 +2,7 @@
 
 /**
  * _printf_address - function to handle "%p" format specifier
- * @argument: void pointer to address
+ * @ap: list of arguments
  *
  * Description: function that print an address by converting the void pointer
  * to address to char pointer
@@ -12,7 +12,7 @@
 
 int _printf_address(va_list ap)
 {
-	void *argument = va_arg(ap , (void *))
+	void *argument = va_arg(ap, void*);
 	char *x = (char *)(argument);
 
 	_puts(x);
