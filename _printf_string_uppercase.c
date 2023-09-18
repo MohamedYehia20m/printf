@@ -12,10 +12,12 @@
  * Return: number of characters to be printed
  */
 
-int _printf_string_uppercase(char *str)
+int _printf_string_uppercase(va_list ap)
 {
+	char *str = va_arg(ap,(char *));
 	int i = 0;
 	int x;
+
 	while (*(str + i) != '\0')
 	{
 		x = (int)(*(str));
