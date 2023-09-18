@@ -10,8 +10,9 @@
  * Return: number of digits to be printed
  */
 
-int _printf_octal(int argument)
+int _printf_octal(va_list ap)
 {
+	int argument = va_arg(ap,int);
 	int x = convert_to_octal(argument);
 
 	return (_printf_decimal(x));
