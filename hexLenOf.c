@@ -6,7 +6,7 @@
  *
  * Return: length of the hexadecimal equivalent.
  */
-int hexLenOf(int n)
+int hexLenOf(unsigned long int n)
 {
 	int ctr = 0;
 
