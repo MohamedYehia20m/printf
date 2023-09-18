@@ -73,5 +73,6 @@ int _printf_string_uppercase(va_list ap);
 int _putchar_nonPrintable(char c);
 int _printf_percentage(va_list ap);
 int _printf_reverse_string(va_list ap);
+int _printf_rot13(va_list ap);
 
 #endif
