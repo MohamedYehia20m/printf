@@ -22,7 +22,9 @@ int (*get_spec(char s))(va_list ap)
 		{'x', _printf_hexadecimal_lowercase},
 		{'X', _printf_hexadecimal_uppercase},
 		{'S', _printf_string_uppercase},
-		{'p', _printf_address}
+		{'p', _printf_address},
+		{'r', _printf_reverse_string},
+		{'R', _printf_rot13}
 	};
 	int i = 0;
 
