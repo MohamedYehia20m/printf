@@ -10,8 +10,10 @@
  * Return: number of digits printed using _print_decimal
  */
 
-unsigned int _printf_unsigned_integer(int argument)
+unsigned int _printf_unsigned_integer(va_list ap)
 {
+	int argument = va_arg(ap,int);
+
 	if (argument < 0)
 	{
 		int x = TwosComplement(argument);
