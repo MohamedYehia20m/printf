@@ -11,13 +11,13 @@ char *_itoa(int n)
 	char *str;
 	int nLen = intlen(n);
 
-	str = malloc(sizeof(char) * (nlen + 1));
+	str = malloc(sizeof(char) * (nLen + 1));
 	if (str == NULL)
 		return (NULL);
-	str[nlen + 1] = '\0';
-	while (nlen != -1)
+	str[nLen--] = '\0';
+	while (nLen != -1)
 	{
-		str[nlen--] = (n % 10) + '0';
+		str[nLen--] = (n % 10) + '0';
 		n /= 10;
 	}
 	return (str);

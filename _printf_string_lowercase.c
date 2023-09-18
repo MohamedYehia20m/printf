@@ -13,5 +13,5 @@ int _printf_string_lowercase(va_list ap)
 	if (str == NULL)
 		str = NULL_STRING;
 	_puts(str);
-	return (strlen(str));
+	return (_strlen(str));
 }

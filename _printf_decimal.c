@@ -10,10 +10,13 @@
  * Return: return number of digits to be printed using intlen()
  */
 
-int _print_decimal(int argument)
+int _printf_decimal(int argument)
 {
-	char *x = itoa(argument);
-
-	_puts(x);
+	if (argument < 0)
+	{
+		_putchar('-');
+		argument *= -1;
+	}
+	_puts(_itoa(argument));
 	return (intlen(argument));
 }

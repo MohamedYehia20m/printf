@@ -5,9 +5,12 @@
 /******************* Includes *******************/
 /************************************************/
 
+#include <stdlib.h>
+#include <stdio.h>
 #include <stdarg.h>
 #include <stddef.h>
 #include <stdlib.h>
+#include <limits.h>
 
 
 /************************************************/
@@ -43,7 +46,6 @@ void _puts(char *str);
 int _strlen(char *s);
 int _atoi(char *s);
 void rev_string(char *s);
-int 2sComplement(int c);
 
 /**************** Task Functions ****************/
 int _printf(const char *format, ...);
@@ -62,12 +64,12 @@ int hexLenOf(int n);
 int _printf_hexadecimal_uppercase(va_list ap);
 char *convert_to_hexadecimal_uppercase(int n);
 int _printf_decimal(int c);
-int _printf_unsigned_integer(unsigned int c);
-int 2sComplement(int c);
+unsigned int _printf_unsigned_integer(int c);
+int TwosComplement(int c);
 int _printf_octal(int argument);
 int convert_to_octal(int argument);
 int _printf_address(void *argument);
 int _printf_string_uppercase(char *str);
-int  _putchar_nonPrintable(char c);
+int _putchar_nonPrintable(char c);
 
 #endif
