@@ -12,9 +12,10 @@
 
 int _printf_address(va_list ap)
 {
-	void *argument = va_arg(ap, void*);
-	char *x = (char *)(argument);
+	unsigned long int n = va_arg(ap, unsigned long int);
+	char *x = convert_to_hexadecimal_lowercase(n);
 
+	_puts("0x");
 	_puts(x);
 	return (_strlen(x));
 }
