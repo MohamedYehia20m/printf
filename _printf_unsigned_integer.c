@@ -2,7 +2,7 @@
 
 /**
  * _printf_unsigned_integer - print unsigned int
- * @argument: unsigned number to be printed
+ * @ap: list of arguments
  *
  * Description: printing unsigned int by converting negative number to it's
  * 2's complement
@@ -18,9 +18,9 @@ unsigned int _printf_unsigned_integer(va_list ap)
 	{
 		int x = TwosComplement(argument);
 
-		return (int)(_printf_decimal((unsigned int)(x)));
+		return (_puts(_itoa(x)));
 	}
 	else
-		return (int)(_printf_decimal((unsigned int)(argument)));
+		return (_puts(_itoa((unsigned int)(argument))));
 }
 
