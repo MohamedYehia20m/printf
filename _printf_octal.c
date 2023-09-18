@@ -2,7 +2,7 @@
 
 /**
  * _printf_octal - print a number base(8)
- * @argument: number to be printed in base(8)
+ * @ap: list of argument
  *
  * Description: funvtion that convert a decimal base(10) to base(8) then
  * print it
@@ -12,8 +12,9 @@
 
 int _printf_octal(va_list ap)
 {
-	int argument = va_arg(ap,int);
+	int argument = va_arg(ap, int);
 	int x = convert_to_octal(argument);
 
-	return (_printf_decimal(x));
+	_puts(_itoa(x));
+	return (intlen(x));
 }
