@@ -66,5 +66,7 @@ int 2sComplement(int c);
 int _printf_octal(int argument);
 int convert_to_octal(int argument);
 int _printf_address(void *argument);
+int _printf_string_uppercase(char *str);
+int  _putchar_nonPrintable(char c);
 
 #endif
