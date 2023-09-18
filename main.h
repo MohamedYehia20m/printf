@@ -45,6 +45,7 @@ void _puts(char *str);
 int _strlen(char *s);
 int _atoi(char *s);
 void rev_string(char *s);
+char *rot13(char *str);
 
 /**************** Task Functions ****************/
 int _printf(const char *format, ...);
