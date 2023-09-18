@@ -10,17 +10,21 @@
  * Return: number of digits printed using _print_decimal
  */
 
-unsigned int _printf_unsigned_integer(va_list ap)
+int _printf_unsigned_integer(va_list ap)
 {
 	int argument = va_arg(ap, int);
+	int x;
 
 	if (argument < 0)
 	{
-		int x = TwosComplement(argument);
-
-		return (_puts(_itoa(x)));
+		x = TwosComplement(argument);
+		_puts(_itoa(x));
+		return (intlen(x));
 	}
 	else
-		return (_puts(_itoa((unsigned int)(argument))));
+	{
+		_puts(_itoa((unsigned int)(argument)));
+		return (intlen(argument));
+	}
 }
 
