@@ -17,5 +17,5 @@ int _printf_address(va_list ap)
 
 	_puts("0x");
 	_puts(x);
-	return (_strlen(x));
+	return (_strlen(x) + 2);
 }
