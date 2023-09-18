@@ -12,7 +12,7 @@
 
 unsigned int _printf_unsigned_integer(va_list ap)
 {
-	int argument = va_arg(ap,int);
+	int argument = va_arg(ap, int);
 
 	if (argument < 0)
 	{
