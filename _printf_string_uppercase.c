@@ -15,13 +15,15 @@
 int _printf_string_uppercase(char *str)
 {
 	int i = 0;
-
-	while (str)
+	int x;
+	while (*(str + i) != '\0')
 	{
-		if (*(str) < "SP" || *(str) > "DEL")
-			_putchar_nonPrintable();
+		x = (int)(*(str));
+		if ((x < 32) || (x > 127))
+			_putchar_nonPrintable(*(str + i));
 		else
-			_putchar();
+			_putchar(*(str + i));
+		i++;
 	}
 	return (_strlen(str));
 }
