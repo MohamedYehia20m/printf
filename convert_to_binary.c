@@ -14,9 +14,9 @@ char *convert_to_binary(int n)
 	str = malloc(sizeof(char) * (len + 1));
 	if (str == NULL)
 		return (NULL);
-	while (ctr <= len)
+	while (ctr < len)
 	{
-		str[ctr] = n % 2;
+		str[ctr] = (n % 2) + '0';
 		n /= 2;
 		ctr++;
 	}
