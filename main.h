@@ -30,8 +30,8 @@
  */
 typedef struct spec
 {
-	char *spec;
-	int (*func)(va_list); /* TODO: Parameters will be modified */
+	char spec;
+	int (*func)(va_list);
 } spec_t;
 
 
@@ -48,7 +48,7 @@ void rev_string(char *s);
 
 /**************** Task Functions ****************/
 int _printf(const char *format, ...);
-int (*get_spec(char *s))(va_list ap);
+int (*get_spec(char s))(va_list ap);
 int _printf_character(va_list ap);
 int _printf_string_lowercase(va_list ap);
 int _printf_integer(va_list ap);
