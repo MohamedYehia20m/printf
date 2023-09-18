@@ -10,8 +10,9 @@
  * Return: number of characters printed
  */
 
-int _printf_address(void *argument)
+int _printf_address(va_list ap)
 {
+	void *argument = va_arg(ap , (void *))
 	char *x = (char *)(argument);
 
 	_puts(x);
