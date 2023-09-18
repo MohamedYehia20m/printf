@@ -10,15 +10,15 @@
  * Return: number of digits printed using _print_decimal
  */
 
-int _printf_unsigned_integer(unsigned int argument)
+unsigned int _printf_unsigned_integer(int argument)
 {
 	if (argument < 0)
 	{
-		int x = 2sComplement(argument);
+		int x = TwosComplement(argument);
 
-		return (_printf_decimal(x));
+		return (int)(_printf_decimal((unsigned int)(x)));
 	}
 	else
-		return (_printf_decimal((int)(argument)));
+		return (int)(_printf_decimal((unsigned int)(argument)));
 }
 
