@@ -3,7 +3,7 @@
 /**
  * _printf_string_uppercase - function that print string with printable
  * character only
- * @str: pointer to char
+ * @ap: list of argument
  *
  * Description: Non printable characters (0 < ASCII value < 32 or >= 127)
  * are printed this way: \x, followed by the ASCII code value in hexadecimal
@@ -14,7 +14,7 @@
 
 int _printf_string_uppercase(va_list ap)
 {
-	char *str = va_arg(ap,(char *));
+	char *str = va_arg(ap, char*);
 	int i = 0;
 	int x;
 
