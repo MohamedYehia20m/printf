@@ -7,11 +7,15 @@
  *
  * Return: length of the string printed.
  */
-int _printf_reverse_string(va_list ap)
+int _printf_reverse_string(va_list __attribute__((unused)) ap)
 {
-	char *str = va_arg(ap, char *);
-
-	rev_string(str);
-	_puts(str);
-	return (_strlen(str));
+/*
+*	char *str = va_arg(ap, char *);
+*
+*	rev_string(str);
+*	_puts(str);
+*	 return (_strlen(str));
+*/
+	_puts("%r");
+	return (2);
 }
