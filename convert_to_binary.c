@@ -6,7 +6,7 @@
  *
  * Return: pointer to string.
  */
-char *convert_to_binary(int n)
+char *convert_to_binary(unsigned int n)
 {
 	int len = binLenOf(n), ctr = 0;
 	char *str;

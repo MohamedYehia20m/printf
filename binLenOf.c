@@ -6,7 +6,7 @@
  *
  * Return: length of the binary equivalent.
  */
-int binLenOf(int n)
+int binLenOf(unsigned int n)
 {
 	int ctr = 0;
 
