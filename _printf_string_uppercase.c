@@ -17,15 +17,17 @@ int _printf_string_uppercase(va_list ap)
 	char *str = va_arg(ap, char*);
 	int i = 0;
 	int x;
+	int len = _strlen(str);
 
 	while (*(str + i) != '\0')
 	{
-		x = (int)(*(str));
+		x = (int)(*(str + i));
 		if ((x < 32) || (x > 127))
-			_putchar_nonPrintable(*(str + i));
+			/* subtracting 1 that already added from _strlen() */
+			len += _putchar_nonPrintable(*(str + i)) - 1;
 		else
 			_putchar(*(str + i));
 		i++;
 	}
-	return (_strlen(str));
+	return (len);
 }
