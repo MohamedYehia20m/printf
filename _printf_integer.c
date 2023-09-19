@@ -8,8 +8,17 @@
  */
 int _printf_integer(va_list ap)
 {
-	char *str = _itoa(va_arg(ap, int));
+	int n = va_arg(ap, int), len = 0;
+	char *str;
 
+	if (n < 0)
+	{
+		_putchar('-');
+		len++;
+		n *= -1;
+	}
+	str = _itoa(n);
 	_puts(str);
-	return (_strlen(str));
+	len += _strlen(str);
+	return (len);
 }

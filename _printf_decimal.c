@@ -13,12 +13,14 @@
 int _printf_decimal(va_list ap)
 {
 	int argument = va_arg(ap, int);
+	int len = intlen(argument);
 
 	if (argument < 0)
 	{
 		_putchar('-');
 		argument *= -1;
+		len++;
 	}
 	_puts(_itoa(argument));
-	return (intlen(argument));
+	return (len);
 }
