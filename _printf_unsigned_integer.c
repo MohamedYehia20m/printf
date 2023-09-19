@@ -13,19 +13,8 @@
 int _printf_unsigned_integer(va_list ap)
 {
 	unsigned int argument = va_arg(ap, unsigned int);
-	/*int x;
 
-	if (argument < 0)
-	{
-		x = TwosComplement(argument);
-		_puts(_uitoa(x));
-		return (intlen(x));
-	}
-	else*/
-	/*{*/
-
-		_puts(_uitoa(argument));
-		return ((int)(uintlen(argument)));
-	/*}*/
+	_puts(_uitoa(argument));
+	return ((int)(uintlen(argument)));
 }
 
