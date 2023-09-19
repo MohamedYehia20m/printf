@@ -67,7 +67,6 @@ int _printf_decimal(va_list ap);
 int _printf_unsigned_integer(va_list ap);
 int TwosComplement(int c);
 int _printf_octal(va_list ap);
-int convert_to_octal(int argument);
 int _printf_address(va_list ap);
 int _printf_string_uppercase(va_list ap);
 int _putchar_nonPrintable(char c);
