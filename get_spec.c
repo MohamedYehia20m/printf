@@ -28,7 +28,7 @@ int (*get_spec(char s))(va_list ap)
 	};
 	int i = 0;
 
-	while (i < 12)
+	while (i < 14)
 	{
 		if (s == specs[i].spec)
 			return (specs[i].func);
