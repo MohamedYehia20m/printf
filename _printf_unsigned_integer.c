@@ -12,19 +12,20 @@
 
 int _printf_unsigned_integer(va_list ap)
 {
-	int argument = va_arg(ap, int);
-	int x;
+	unsigned int argument = va_arg(ap, unsigned int);
+	/*int x;
 
 	if (argument < 0)
 	{
 		x = TwosComplement(argument);
-		_puts(_itoa(x));
+		_puts(_uitoa(x));
 		return (intlen(x));
 	}
-	else
-	{
-		_puts(_itoa((unsigned int)(argument)));
-		return (intlen(argument));
-	}
+	else*/
+	/*{*/
+
+		_puts(_uitoa(argument));
+		return ((int)(uintlen(argument)));
+	/*}*/
 }
 
