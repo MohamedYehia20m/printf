@@ -15,7 +15,18 @@ int  _putchar_nonPrintable(char c)
 {
 	int x = (int)c;
 	char *y = convert_to_hexadecimal_uppercase(x);
+	int len = _strlen(y);
 
-	_puts(y);
-	return (_strlen(y));
+	_putchar('\\');
+	_putchar('x');
+	len += 2;
+	if (len == 4)
+		_puts(y);
+	else
+	{
+		_putchar('0');
+		len++;
+		_puts(y);
+	}
+	return (len);
 }
