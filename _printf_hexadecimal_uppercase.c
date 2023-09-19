@@ -9,7 +9,7 @@
  */
 int _printf_hexadecimal_uppercase(va_list ap)
 {
-	char *str = convert_to_hexadecimal_uppercase(va_arg(ap, int));
+	char *str = convert_to_hexadecimal_uppercase(va_arg(ap, unsigned int));
 
 	_puts(str);
 	return (_strlen(str));

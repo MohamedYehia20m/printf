@@ -7,9 +7,10 @@
  *
  * Return: pointer to string.
  */
-char *convert_to_hexadecimal_uppercase(int n)
+char *convert_to_hexadecimal_uppercase(unsigned long int n)
 {
-	int len = hexLenOf(n), ctr = 0, tmp;
+	int len = hexLenOf(n), ctr = 0;
+	unsigned long int tmp;
 	char *str;
 
 	str = malloc(sizeof(char) * (len + 1));

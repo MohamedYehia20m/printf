@@ -62,7 +62,7 @@ int _printf_hexadecimal_lowercase(va_list ap);
 char *convert_to_hexadecimal_lowercase(unsigned long int n);
 int hexLenOf(unsigned long int n);
 int _printf_hexadecimal_uppercase(va_list ap);
-char *convert_to_hexadecimal_uppercase(int n);
+char *convert_to_hexadecimal_uppercase(unsigned long int n);
 int _printf_decimal(va_list ap);
 int _printf_unsigned_integer(va_list ap);
 int TwosComplement(int c);
