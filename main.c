@@ -26,6 +26,10 @@ int main(void)
     printf("Unsigned:[%u]\n", ui);
     _printf("signed:[%u]\n", -100);
     printf("signed:[%u]\n", -100);
+    _printf("signed:[%u]\n", -1000);
+        printf("signed:[%u]\n", -1000);
+	_printf("signed:[%u]\n", -10000);
+	    printf("signed:[%u]\n", -10000);
     _printf("Unsigned octal:[%o]\n", ui);
     printf("Unsigned octal:[%o]\n", ui);
     _printf("octal:[%o]\n", 100);
