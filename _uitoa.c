@@ -8,17 +8,17 @@
  */
 char *_uitoa(unsigned int n)
 {
-        char *str;
-        int nLen = uintlen(n);
+	char *str;
+	int nLen = uintlen(n);
 
-        str = malloc(sizeof(char) * (nLen + 1));
-        if (str == NULL)
-                return (NULL);
-        str[nLen--] = '\0';
-        while (nLen != -1)
-        {
-                str[nLen--] = (n % 10) + '0';
-                n /= 10;
-        }
-        return (str);
+	str = malloc(sizeof(char) * (nLen + 1));
+	if (str == NULL)
+		return (NULL);
+	str[nLen--] = '\0';
+	while (nLen != -1)
+	{
+		str[nLen--] = (n % 10) + '0';
+		n /= 10;
+	}
+	return (str);
 }

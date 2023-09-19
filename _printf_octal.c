@@ -14,7 +14,7 @@ int _printf_octal(va_list ap)
 {
 	int i, ctr = 0;
 	int *arr;
-	unsigned int argument = va_arg(ap, unsigned int), cparg = argument; 
+	unsigned int argument = va_arg(ap, unsigned int), cparg = argument;
 
 	while (argument / 8 != 0)
 	{

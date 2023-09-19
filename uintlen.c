@@ -8,7 +8,7 @@
  */
 unsigned int uintlen(unsigned int n)
 {
-        if (n / 10 == 0)
-                return (1);
-        return (uintlen(n / 10) + 1);
+	if (n / 10 == 0)
+		return (1);
+	return (uintlen(n / 10) + 1);
 }
