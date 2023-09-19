@@ -74,5 +74,7 @@ int _putchar_nonPrintable(char c);
 int _printf_percentage(va_list ap);
 int _printf_reverse_string(va_list ap);
 int _printf_rot13(va_list ap);
+char *_uitoa(unsigned int n);
+unsigned int uintlen(unsigned int n);
 
 #endif
